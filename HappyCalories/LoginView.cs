@@ -16,5 +16,7 @@ namespace HappyCalories
         {
             InitializeComponent();
         }
+
+        // znowu sprawdzam, czy jakoś to działa :)
     }
 }
