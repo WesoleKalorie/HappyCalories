@@ -8,5 +8,7 @@ namespace HappyCalories
 {
     interface IView
     {
+        // eventy LoginView;
+        event Func<bool> SqlConnection;
     }
 }

@@ -15,6 +15,13 @@ namespace HappyCalories
         {
             this.model = model;
             this.view = view;
+
+            view.SqlConnection += View_SqlConnection;
+        }
+
+        private bool View_SqlConnection()
+        {
+            return model.MySqlConnection();
         }
     }
 }
