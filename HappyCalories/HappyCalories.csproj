@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ANN.cs" />
     <Compile Include="IView.cs" />
     <Compile Include="LoginView.cs">
       <SubType>Form</SubType>
