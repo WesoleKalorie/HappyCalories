@@ -19,6 +19,8 @@ namespace HappyCalories
             view.SqlConnection += View_SqlConnection;
         }
 
+        // dodaj komentarz
+
         private bool View_SqlConnection()
         {
             return model.MySqlConnection();
