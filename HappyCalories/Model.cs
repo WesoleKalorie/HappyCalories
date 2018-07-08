@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MySql.Data.MySqlClient;
+
 
 namespace HappyCalories
 {
     class Model
     {
-        MySqlConnection connect;
+        /*MySqlConnection connect;
         string connectString;
 
         public bool MySqlConnection()
@@ -28,7 +28,9 @@ namespace HappyCalories
             {
                 return false;
             }
+            
         }
+        */
 
         public void NeuralNetworkStart()
         {
