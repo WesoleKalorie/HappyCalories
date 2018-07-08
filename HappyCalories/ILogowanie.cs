@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HappyCalories
 {
-    interface IView
+    interface ILogowanie
     {
         // eventy LoginView;
         event Func<bool> SqlConnection;

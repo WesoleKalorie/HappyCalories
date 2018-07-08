@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace HappyCalories
 {
-    public partial class LoginView : Form, IView
+    public partial class LoginView : Form, ILogowanie
     {
         
         public LoginView()

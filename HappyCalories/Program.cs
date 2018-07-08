@@ -16,16 +16,10 @@ namespace HappyCalories
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            LoginView loginView = new LoginView();
-            Logowanie view2 = new Logowanie();
-            Rejestracja view3 = new Rejestracja();
-            Konto view4 = new Konto();
-            Edycja view5 = new Edycja();
-            KalkulatorKalorii view6 = new KalkulatorKalorii();
-            Dieta view7 = new Dieta();
+            Logowanie view = new Logowanie();
             Model model = new Model();
-            LoginViewPresenter loginViewPresenter = new LoginViewPresenter(model, loginView);
-            Application.Run(view7);           
+            LogowaniePresenter presenter = new LogowaniePresenter(model, view);
+            Application.Run(view);           
         }
     }
 }

@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace HappyCalories
 {
-    public partial class Logowanie : Form
+    public partial class Logowanie : Form, ILogowanie
     {
         public Logowanie()
         {
             InitializeComponent();
+        }
+
+        public event Func<bool> SqlConnection;
+
+        private void Logowanie_Load(object sender, EventArgs e)
+        {
+            
+
+            if (SqlConnection() == true) MessageBox.Show("OK");
+            else MessageBox.Show("NOT OK");
         }
     }
 }

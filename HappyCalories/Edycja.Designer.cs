@@ -33,8 +33,8 @@
             this.pictureBox_plec = new System.Windows.Forms.PictureBox();
             this.label_nick = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton_ona = new System.Windows.Forms.RadioButton();
             this.radioButton_on = new System.Windows.Forms.RadioButton();
+            this.radioButton_ona = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,20 +45,20 @@
             this.comboBox_tryb = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox_alergeny = new System.Windows.Forms.GroupBox();
-            this.checkBox_A1 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A6 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A14 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A13 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A12 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A10 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A9 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A8 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A7 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A2 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A5 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A4 = new System.Windows.Forms.CheckBox();
-            this.checkBox_A3 = new System.Windows.Forms.CheckBox();
             this.checkBox_A11 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A3 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A4 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A5 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A2 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A7 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A8 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A9 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A10 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A12 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A13 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A14 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A6 = new System.Windows.Forms.CheckBox();
+            this.checkBox_A1 = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker_urodziny = new System.Windows.Forms.DateTimePicker();
             this.button_zapisz = new System.Windows.Forms.Button();
@@ -97,7 +97,7 @@
             this.label_nick.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_nick.Location = new System.Drawing.Point(28, 202);
             this.label_nick.Name = "label_nick";
-            this.label_nick.Size = new System.Drawing.Size(69, 20);
+            this.label_nick.Size = new System.Drawing.Size(56, 17);
             this.label_nick.TabIndex = 4;
             this.label_nick.Text = "label1";
             // 
@@ -114,27 +114,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "płeć fizyczna";
             // 
-            // radioButton_ona
-            // 
-            this.radioButton_ona.AutoSize = true;
-            this.radioButton_ona.Location = new System.Drawing.Point(16, 21);
-            this.radioButton_ona.Name = "radioButton_ona";
-            this.radioButton_ona.Size = new System.Drawing.Size(92, 21);
-            this.radioButton_ona.TabIndex = 0;
-            this.radioButton_ona.TabStop = true;
-            this.radioButton_ona.Text = "Kobieta";
-            this.radioButton_ona.UseVisualStyleBackColor = true;
-            // 
             // radioButton_on
             // 
             this.radioButton_on.AutoSize = true;
             this.radioButton_on.Location = new System.Drawing.Point(132, 21);
             this.radioButton_on.Name = "radioButton_on";
-            this.radioButton_on.Size = new System.Drawing.Size(110, 21);
+            this.radioButton_on.Size = new System.Drawing.Size(88, 19);
             this.radioButton_on.TabIndex = 1;
             this.radioButton_on.TabStop = true;
             this.radioButton_on.Text = "Mężczyzna";
             this.radioButton_on.UseVisualStyleBackColor = true;
+            // 
+            // radioButton_ona
+            // 
+            this.radioButton_ona.AutoSize = true;
+            this.radioButton_ona.Location = new System.Drawing.Point(16, 21);
+            this.radioButton_ona.Name = "radioButton_ona";
+            this.radioButton_ona.Size = new System.Drawing.Size(74, 19);
+            this.radioButton_ona.TabIndex = 0;
+            this.radioButton_ona.TabStop = true;
+            this.radioButton_ona.Text = "Kobieta";
+            this.radioButton_ona.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -145,7 +145,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label13.Location = new System.Drawing.Point(260, 367);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 17);
+            this.label13.Size = new System.Drawing.Size(22, 16);
             this.label13.TabIndex = 30;
             this.label13.Text = "cm";
             // 
@@ -158,7 +158,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label11.Location = new System.Drawing.Point(260, 340);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 17);
+            this.label11.Size = new System.Drawing.Size(22, 16);
             this.label11.TabIndex = 28;
             this.label11.Text = "kg";
             // 
@@ -171,7 +171,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(29, 367);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.Size = new System.Drawing.Size(57, 16);
             this.label3.TabIndex = 20;
             this.label3.Text = "wzrost:";
             // 
@@ -184,7 +184,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(29, 340);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 19;
             this.label2.Text = "waga:";
             // 
@@ -197,7 +197,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(29, 289);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 17);
+            this.label1.Size = new System.Drawing.Size(113, 16);
             this.label1.TabIndex = 18;
             this.label1.Text = "data urodzenia:";
             // 
@@ -213,7 +213,7 @@
             0,
             0});
             this.numericUpDown_waga.Name = "numericUpDown_waga";
-            this.numericUpDown_waga.Size = new System.Drawing.Size(85, 22);
+            this.numericUpDown_waga.Size = new System.Drawing.Size(85, 19);
             this.numericUpDown_waga.TabIndex = 32;
             // 
             // numericUpDown_wzrost
@@ -228,7 +228,7 @@
             0,
             0});
             this.numericUpDown_wzrost.Name = "numericUpDown_wzrost";
-            this.numericUpDown_wzrost.Size = new System.Drawing.Size(85, 22);
+            this.numericUpDown_wzrost.Size = new System.Drawing.Size(85, 19);
             this.numericUpDown_wzrost.TabIndex = 33;
             // 
             // comboBox_tryb
@@ -246,7 +246,7 @@
             "2,0 – ciężka praca fizyczna, trening 7/7"});
             this.comboBox_tryb.Location = new System.Drawing.Point(12, 414);
             this.comboBox_tryb.Name = "comboBox_tryb";
-            this.comboBox_tryb.Size = new System.Drawing.Size(439, 25);
+            this.comboBox_tryb.Size = new System.Drawing.Size(439, 23);
             this.comboBox_tryb.TabIndex = 34;
             this.comboBox_tryb.Text = "-wybierz poziom trybu życia-";
             // 
@@ -259,7 +259,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(29, 394);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 17);
+            this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 35;
             this.label4.Text = "tryb życia:";
             // 
@@ -289,145 +289,145 @@
             this.groupBox_alergeny.TabStop = false;
             this.groupBox_alergeny.Text = "p.p. -produkty pochodne";
             // 
-            // checkBox_A1
+            // checkBox_A11
             // 
-            this.checkBox_A1.AutoSize = true;
-            this.checkBox_A1.Location = new System.Drawing.Point(15, 28);
-            this.checkBox_A1.Name = "checkBox_A1";
-            this.checkBox_A1.Size = new System.Drawing.Size(246, 21);
-            this.checkBox_A1.TabIndex = 0;
-            this.checkBox_A1.Text = "Zboża zawierające gluten";
-            this.checkBox_A1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A6
-            // 
-            this.checkBox_A6.AutoSize = true;
-            this.checkBox_A6.Location = new System.Drawing.Point(15, 164);
-            this.checkBox_A6.Name = "checkBox_A6";
-            this.checkBox_A6.Size = new System.Drawing.Size(129, 21);
-            this.checkBox_A6.TabIndex = 1;
-            this.checkBox_A6.Text = "Soja i p.p.";
-            this.checkBox_A6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A14
-            // 
-            this.checkBox_A14.AutoSize = true;
-            this.checkBox_A14.Location = new System.Drawing.Point(15, 380);
-            this.checkBox_A14.Name = "checkBox_A14";
-            this.checkBox_A14.Size = new System.Drawing.Size(165, 21);
-            this.checkBox_A14.TabIndex = 2;
-            this.checkBox_A14.Text = "Mięczaki i p.p.";
-            this.checkBox_A14.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A13
-            // 
-            this.checkBox_A13.AutoSize = true;
-            this.checkBox_A13.Location = new System.Drawing.Point(15, 353);
-            this.checkBox_A13.Name = "checkBox_A13";
-            this.checkBox_A13.Size = new System.Drawing.Size(138, 21);
-            this.checkBox_A13.TabIndex = 3;
-            this.checkBox_A13.Text = "Łubin i p.p.";
-            this.checkBox_A13.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A12
-            // 
-            this.checkBox_A12.AutoSize = true;
-            this.checkBox_A12.Location = new System.Drawing.Point(15, 326);
-            this.checkBox_A12.Name = "checkBox_A12";
-            this.checkBox_A12.Size = new System.Drawing.Size(282, 21);
-            this.checkBox_A12.TabIndex = 4;
-            this.checkBox_A12.Text = "Dwutlenek siarki i siarczyny";
-            this.checkBox_A12.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A10
-            // 
-            this.checkBox_A10.AutoSize = true;
-            this.checkBox_A10.Location = new System.Drawing.Point(15, 272);
-            this.checkBox_A10.Name = "checkBox_A10";
-            this.checkBox_A10.Size = new System.Drawing.Size(165, 21);
-            this.checkBox_A10.TabIndex = 5;
-            this.checkBox_A10.Text = "Gorczyca i p.p.";
-            this.checkBox_A10.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A9
-            // 
-            this.checkBox_A9.AutoSize = true;
-            this.checkBox_A9.Location = new System.Drawing.Point(15, 245);
-            this.checkBox_A9.Name = "checkBox_A9";
-            this.checkBox_A9.Size = new System.Drawing.Size(228, 21);
-            this.checkBox_A9.TabIndex = 6;
-            this.checkBox_A9.Text = "Seler zwyczajny i p.p.";
-            this.checkBox_A9.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A8
-            // 
-            this.checkBox_A8.AutoSize = true;
-            this.checkBox_A8.Location = new System.Drawing.Point(15, 218);
-            this.checkBox_A8.Name = "checkBox_A8";
-            this.checkBox_A8.Size = new System.Drawing.Size(93, 21);
-            this.checkBox_A8.TabIndex = 7;
-            this.checkBox_A8.Text = "Orzechy";
-            this.checkBox_A8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A7
-            // 
-            this.checkBox_A7.AutoSize = true;
-            this.checkBox_A7.Location = new System.Drawing.Point(15, 191);
-            this.checkBox_A7.Name = "checkBox_A7";
-            this.checkBox_A7.Size = new System.Drawing.Size(138, 21);
-            this.checkBox_A7.TabIndex = 8;
-            this.checkBox_A7.Text = "Mleko i p.p.";
-            this.checkBox_A7.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A2
-            // 
-            this.checkBox_A2.AutoSize = true;
-            this.checkBox_A2.Location = new System.Drawing.Point(15, 55);
-            this.checkBox_A2.Name = "checkBox_A2";
-            this.checkBox_A2.Size = new System.Drawing.Size(183, 21);
-            this.checkBox_A2.TabIndex = 9;
-            this.checkBox_A2.Text = "Skorupiaki i p.p.";
-            this.checkBox_A2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A5
-            // 
-            this.checkBox_A5.AutoSize = true;
-            this.checkBox_A5.Location = new System.Drawing.Point(15, 137);
-            this.checkBox_A5.Name = "checkBox_A5";
-            this.checkBox_A5.Size = new System.Drawing.Size(228, 21);
-            this.checkBox_A5.TabIndex = 10;
-            this.checkBox_A5.Text = "Orzeszki ziemne i p.p.";
-            this.checkBox_A5.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_A4
-            // 
-            this.checkBox_A4.AutoSize = true;
-            this.checkBox_A4.Location = new System.Drawing.Point(15, 109);
-            this.checkBox_A4.Name = "checkBox_A4";
-            this.checkBox_A4.Size = new System.Drawing.Size(129, 21);
-            this.checkBox_A4.TabIndex = 11;
-            this.checkBox_A4.Text = "Ryby i p.p.";
-            this.checkBox_A4.UseVisualStyleBackColor = true;
+            this.checkBox_A11.AutoSize = true;
+            this.checkBox_A11.Location = new System.Drawing.Point(15, 299);
+            this.checkBox_A11.Name = "checkBox_A11";
+            this.checkBox_A11.Size = new System.Drawing.Size(173, 19);
+            this.checkBox_A11.TabIndex = 13;
+            this.checkBox_A11.Text = "Nasiona sezamu i p.p.";
+            this.checkBox_A11.UseVisualStyleBackColor = true;
             // 
             // checkBox_A3
             // 
             this.checkBox_A3.AutoSize = true;
             this.checkBox_A3.Location = new System.Drawing.Point(15, 82);
             this.checkBox_A3.Name = "checkBox_A3";
-            this.checkBox_A3.Size = new System.Drawing.Size(138, 21);
+            this.checkBox_A3.Size = new System.Drawing.Size(110, 19);
             this.checkBox_A3.TabIndex = 12;
             this.checkBox_A3.Text = "Jajka i p.p.";
             this.checkBox_A3.UseVisualStyleBackColor = true;
             // 
-            // checkBox_A11
+            // checkBox_A4
             // 
-            this.checkBox_A11.AutoSize = true;
-            this.checkBox_A11.Location = new System.Drawing.Point(15, 299);
-            this.checkBox_A11.Name = "checkBox_A11";
-            this.checkBox_A11.Size = new System.Drawing.Size(219, 21);
-            this.checkBox_A11.TabIndex = 13;
-            this.checkBox_A11.Text = "Nasiona sezamu i p.p.";
-            this.checkBox_A11.UseVisualStyleBackColor = true;
+            this.checkBox_A4.AutoSize = true;
+            this.checkBox_A4.Location = new System.Drawing.Point(15, 109);
+            this.checkBox_A4.Name = "checkBox_A4";
+            this.checkBox_A4.Size = new System.Drawing.Size(103, 19);
+            this.checkBox_A4.TabIndex = 11;
+            this.checkBox_A4.Text = "Ryby i p.p.";
+            this.checkBox_A4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A5
+            // 
+            this.checkBox_A5.AutoSize = true;
+            this.checkBox_A5.Location = new System.Drawing.Point(15, 137);
+            this.checkBox_A5.Name = "checkBox_A5";
+            this.checkBox_A5.Size = new System.Drawing.Size(180, 19);
+            this.checkBox_A5.TabIndex = 10;
+            this.checkBox_A5.Text = "Orzeszki ziemne i p.p.";
+            this.checkBox_A5.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A2
+            // 
+            this.checkBox_A2.AutoSize = true;
+            this.checkBox_A2.Location = new System.Drawing.Point(15, 55);
+            this.checkBox_A2.Name = "checkBox_A2";
+            this.checkBox_A2.Size = new System.Drawing.Size(145, 19);
+            this.checkBox_A2.TabIndex = 9;
+            this.checkBox_A2.Text = "Skorupiaki i p.p.";
+            this.checkBox_A2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A7
+            // 
+            this.checkBox_A7.AutoSize = true;
+            this.checkBox_A7.Location = new System.Drawing.Point(15, 191);
+            this.checkBox_A7.Name = "checkBox_A7";
+            this.checkBox_A7.Size = new System.Drawing.Size(110, 19);
+            this.checkBox_A7.TabIndex = 8;
+            this.checkBox_A7.Text = "Mleko i p.p.";
+            this.checkBox_A7.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A8
+            // 
+            this.checkBox_A8.AutoSize = true;
+            this.checkBox_A8.Location = new System.Drawing.Point(15, 218);
+            this.checkBox_A8.Name = "checkBox_A8";
+            this.checkBox_A8.Size = new System.Drawing.Size(75, 19);
+            this.checkBox_A8.TabIndex = 7;
+            this.checkBox_A8.Text = "Orzechy";
+            this.checkBox_A8.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A9
+            // 
+            this.checkBox_A9.AutoSize = true;
+            this.checkBox_A9.Location = new System.Drawing.Point(15, 245);
+            this.checkBox_A9.Name = "checkBox_A9";
+            this.checkBox_A9.Size = new System.Drawing.Size(180, 19);
+            this.checkBox_A9.TabIndex = 6;
+            this.checkBox_A9.Text = "Seler zwyczajny i p.p.";
+            this.checkBox_A9.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A10
+            // 
+            this.checkBox_A10.AutoSize = true;
+            this.checkBox_A10.Location = new System.Drawing.Point(15, 272);
+            this.checkBox_A10.Name = "checkBox_A10";
+            this.checkBox_A10.Size = new System.Drawing.Size(131, 19);
+            this.checkBox_A10.TabIndex = 5;
+            this.checkBox_A10.Text = "Gorczyca i p.p.";
+            this.checkBox_A10.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A12
+            // 
+            this.checkBox_A12.AutoSize = true;
+            this.checkBox_A12.Location = new System.Drawing.Point(15, 326);
+            this.checkBox_A12.Name = "checkBox_A12";
+            this.checkBox_A12.Size = new System.Drawing.Size(222, 19);
+            this.checkBox_A12.TabIndex = 4;
+            this.checkBox_A12.Text = "Dwutlenek siarki i siarczyny";
+            this.checkBox_A12.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A13
+            // 
+            this.checkBox_A13.AutoSize = true;
+            this.checkBox_A13.Location = new System.Drawing.Point(15, 353);
+            this.checkBox_A13.Name = "checkBox_A13";
+            this.checkBox_A13.Size = new System.Drawing.Size(110, 19);
+            this.checkBox_A13.TabIndex = 3;
+            this.checkBox_A13.Text = "Łubin i p.p.";
+            this.checkBox_A13.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A14
+            // 
+            this.checkBox_A14.AutoSize = true;
+            this.checkBox_A14.Location = new System.Drawing.Point(15, 380);
+            this.checkBox_A14.Name = "checkBox_A14";
+            this.checkBox_A14.Size = new System.Drawing.Size(131, 19);
+            this.checkBox_A14.TabIndex = 2;
+            this.checkBox_A14.Text = "Mięczaki i p.p.";
+            this.checkBox_A14.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A6
+            // 
+            this.checkBox_A6.AutoSize = true;
+            this.checkBox_A6.Location = new System.Drawing.Point(15, 164);
+            this.checkBox_A6.Name = "checkBox_A6";
+            this.checkBox_A6.Size = new System.Drawing.Size(103, 19);
+            this.checkBox_A6.TabIndex = 1;
+            this.checkBox_A6.Text = "Soja i p.p.";
+            this.checkBox_A6.UseVisualStyleBackColor = true;
+            // 
+            // checkBox_A1
+            // 
+            this.checkBox_A1.AutoSize = true;
+            this.checkBox_A1.Location = new System.Drawing.Point(15, 28);
+            this.checkBox_A1.Name = "checkBox_A1";
+            this.checkBox_A1.Size = new System.Drawing.Size(194, 19);
+            this.checkBox_A1.TabIndex = 0;
+            this.checkBox_A1.Text = "Zboża zawierające gluten";
+            this.checkBox_A1.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -437,7 +437,7 @@
             this.label5.ForeColor = System.Drawing.Color.LightPink;
             this.label5.Location = new System.Drawing.Point(453, 79);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(322, 46);
+            this.label5.Size = new System.Drawing.Size(268, 36);
             this.label5.TabIndex = 37;
             this.label5.Text = "WYBIERZ PRODUKTY NA KTÓRE \r\nJESTES UCZULONY(A):";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -447,7 +447,7 @@
             this.dateTimePicker_urodziny.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.dateTimePicker_urodziny.Location = new System.Drawing.Point(12, 309);
             this.dateTimePicker_urodziny.Name = "dateTimePicker_urodziny";
-            this.dateTimePicker_urodziny.Size = new System.Drawing.Size(350, 24);
+            this.dateTimePicker_urodziny.Size = new System.Drawing.Size(350, 21);
             this.dateTimePicker_urodziny.TabIndex = 38;
             // 
             // button_zapisz
@@ -467,7 +467,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.button_zapisz);
             this.Controls.Add(this.dateTimePicker_urodziny);
             this.Controls.Add(this.label5);
