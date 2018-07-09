@@ -306,6 +306,7 @@
             this.button_dieta.TabIndex = 20;
             this.button_dieta.Text = "WYGENERUJ\r\nDIETĘ\r\n";
             this.button_dieta.UseVisualStyleBackColor = false;
+            this.button_dieta.Click += new System.EventHandler(this.button_dieta_Click);
             // 
             // button_kalkulator
             // 

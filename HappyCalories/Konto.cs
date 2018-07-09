@@ -13,6 +13,7 @@ namespace HappyCalories
     public partial class Konto : Form, IKonto
     {
         KalkulatorKalorii calc = new KalkulatorKalorii();
+        Dieta dieta = new Dieta();
 
         private string login;
         private string password;
@@ -42,6 +43,13 @@ namespace HappyCalories
             calc.GetAllNameOfProduct += Calc_GetAllNameOfProduct;
             calc.GetAllCaloriesOfProduct += Calc_GetAllCaloriesOfProduct;
             calc.Cancel += Calc_Cancel;
+            dieta.Cancel += Dieta_Cancel;
+        }
+
+        private void Dieta_Cancel()
+        {
+            this.Show();
+            dieta.Hide();
         }
 
         private void Calc_Cancel()
@@ -122,6 +130,12 @@ namespace HappyCalories
         private void button_kalkulator_Click(object sender, EventArgs e)
         {
             calc.Show();
+            this.Hide();
+        }
+
+        private void button_dieta_Click(object sender, EventArgs e)
+        {
+            dieta.Show();
             this.Hide();
         }
     }

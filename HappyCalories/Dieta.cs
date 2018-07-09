@@ -12,6 +12,9 @@ namespace HappyCalories
 {
     public partial class Dieta : Form
     {
+
+        public event Action Cancel;
+
         public Dieta()
         {
             InitializeComponent();
@@ -20,6 +23,11 @@ namespace HappyCalories
         private void Dieta_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button_back_Click(object sender, EventArgs e)
+        {
+            Cancel();
         }
     }
 }

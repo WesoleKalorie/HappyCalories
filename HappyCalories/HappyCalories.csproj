@@ -58,6 +58,7 @@
     <Compile Include="Edycja.Designer.cs">
       <DependentUpon>Edycja.cs</DependentUpon>
     </Compile>
+    <Compile Include="IDieta.cs" />
     <Compile Include="IEdycja.cs" />
     <Compile Include="IKalkulatorKalorii.cs" />
     <Compile Include="IKonto.cs" />

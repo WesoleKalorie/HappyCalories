@@ -54,15 +54,15 @@
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.listView_dania = new System.Windows.Forms.ListView();
-            this.label2 = new System.Windows.Forms.Label();
             this.columnHeader_nazwadania = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_kalorycznoscpor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label_nazwadania = new System.Windows.Forms.Label();
             this.listView_produkty = new System.Windows.Forms.ListView();
-            this.label4 = new System.Windows.Forms.Label();
             this.columnHeader_produkt = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader_gramy = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.label4 = new System.Windows.Forms.Label();
             this.button_reload = new System.Windows.Forms.Button();
             this.button_back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
@@ -88,7 +88,7 @@
             this.label1.ForeColor = System.Drawing.Color.LightPink;
             this.label1.Location = new System.Drawing.Point(275, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(250, 23);
+            this.label1.Size = new System.Drawing.Size(208, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "TWOJA DIETA NA DZIŚ!";
             // 
@@ -139,19 +139,6 @@
             this.listView_dania.UseCompatibleStateImageBehavior = false;
             this.listView_dania.View = System.Windows.Forms.View.Details;
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label2.Location = new System.Drawing.Point(0, 103);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(896, 17);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "proponowana dieta to zestaw pięciu posiłków których kompozycja pokryje twoje dzie" +
-    "nne zapotrzebowanie kaloryczne";
-            // 
             // columnHeader_nazwadania
             // 
             this.columnHeader_nazwadania.Text = "Nazwa";
@@ -163,13 +150,26 @@
             this.columnHeader_kalorycznoscpor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader_kalorycznoscpor.Width = 123;
             // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label2.Location = new System.Drawing.Point(0, 103);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(784, 14);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "proponowana dieta to zestaw pięciu posiłków których kompozycja pokryje twoje dzie" +
+    "nne zapotrzebowanie kaloryczne";
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 136);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 144);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(782, 417);
+            this.pictureBox1.Size = new System.Drawing.Size(784, 417);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -180,7 +180,7 @@
             this.label_nazwadania.Image = ((System.Drawing.Image)(resources.GetObject("label_nazwadania.Image")));
             this.label_nazwadania.Location = new System.Drawing.Point(450, 158);
             this.label_nazwadania.Name = "label_nazwadania";
-            this.label_nazwadania.Size = new System.Drawing.Size(229, 20);
+            this.label_nazwadania.Size = new System.Drawing.Size(184, 17);
             this.label_nazwadania.TabIndex = 9;
             this.label_nazwadania.Text = "TU MA BYĆ NAZWA DANIA:";
             // 
@@ -204,17 +204,6 @@
             this.listView_produkty.UseCompatibleStateImageBehavior = false;
             this.listView_produkty.View = System.Windows.Forms.View.Details;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.LightPink;
-            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
-            this.label4.Location = new System.Drawing.Point(84, 158);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 20);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "WYBIERZ DANIE:";
-            // 
             // columnHeader_produkt
             // 
             this.columnHeader_produkt.Text = "Produkt";
@@ -225,6 +214,17 @@
             this.columnHeader_gramy.Text = "Gramatura";
             this.columnHeader_gramy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader_gramy.Width = 148;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.LightPink;
+            this.label4.Image = ((System.Drawing.Image)(resources.GetObject("label4.Image")));
+            this.label4.Location = new System.Drawing.Point(84, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(120, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "WYBIERZ DANIE:";
             // 
             // button_reload
             // 
@@ -251,13 +251,14 @@
             this.button_back.TabIndex = 42;
             this.button_back.Text = "WRÓĆ";
             this.button_back.UseVisualStyleBackColor = false;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // Dieta
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.button_reload);
             this.Controls.Add(this.label4);
