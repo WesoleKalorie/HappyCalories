@@ -28,6 +28,10 @@ namespace HappyCalories
         // eventy Konto.cs
         public event Func<string, string, string[]> LoadUserData;
 
+        // events KalkulatorKalorii.cs
+        public event Func<string[]> GetAllNameOfProduct;
+        public event Func<string[]> GetAllCaloriesOfProduct;
+
         public Logowanie()
         {
             InitializeComponent();
@@ -36,10 +40,20 @@ namespace HappyCalories
             rejs.Register += Rejs_Register;
             rejs.AddUser_Edycja += Rejs_AddUser_Edycja;
             konto.LoadUserData += Konto_LoadUserData;
+            konto.GetAllCaloriesOfProduct += Konto_GetAllCaloriesOfProduct;
+            konto.GetAllNameOfProduct += Konto_GetAllNameOfProduct;
           
         }
 
-       
+        private string[] Konto_GetAllNameOfProduct()
+        {
+            return GetAllNameOfProduct();
+        }
+
+        private string[] Konto_GetAllCaloriesOfProduct()
+        {
+            return GetAllCaloriesOfProduct();
+        }
 
         private string[] Konto_LoadUserData(string login, string password)
         {

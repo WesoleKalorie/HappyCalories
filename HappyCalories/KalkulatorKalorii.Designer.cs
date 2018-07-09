@@ -31,6 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KalkulatorKalorii));
             this.pictureBox_logo = new System.Windows.Forms.PictureBox();
             this.listView_listaproduktow = new System.Windows.Forms.ListView();
+            this.columnHeader_nazwa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader_kalorycznosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox_produkt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,8 +42,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.button_back = new System.Windows.Forms.Button();
-            this.columnHeader_nazwa = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader_kalorycznosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_gramatura)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,17 @@
             this.listView_listaproduktow.TabIndex = 4;
             this.listView_listaproduktow.UseCompatibleStateImageBehavior = false;
             this.listView_listaproduktow.View = System.Windows.Forms.View.Details;
+            this.listView_listaproduktow.SelectedIndexChanged += new System.EventHandler(this.listView_listaproduktow_SelectedIndexChanged);
+            // 
+            // columnHeader_nazwa
+            // 
+            this.columnHeader_nazwa.Text = "Nazwa";
+            this.columnHeader_nazwa.Width = 296;
+            // 
+            // columnHeader_kalorycznosc
+            // 
+            this.columnHeader_kalorycznosc.Text = "kcal/100g";
+            this.columnHeader_kalorycznosc.Width = 125;
             // 
             // label1
             // 
@@ -81,7 +92,7 @@
             this.label1.ForeColor = System.Drawing.Color.LightPink;
             this.label1.Location = new System.Drawing.Point(480, 90);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(286, 69);
+            this.label1.Size = new System.Drawing.Size(238, 54);
             this.label1.TabIndex = 5;
             this.label1.Text = "WYBIERZ PRODUKT Z LISTY\r\nLUB\r\nWYSZUKAJ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -92,8 +103,9 @@
             this.textBox_produkt.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.textBox_produkt.Location = new System.Drawing.Point(460, 162);
             this.textBox_produkt.Name = "textBox_produkt";
-            this.textBox_produkt.Size = new System.Drawing.Size(282, 27);
+            this.textBox_produkt.Size = new System.Drawing.Size(282, 23);
             this.textBox_produkt.TabIndex = 6;
+            this.textBox_produkt.TextChanged += new System.EventHandler(this.textBox_produkt_TextChanged);
             // 
             // label2
             // 
@@ -102,7 +114,7 @@
             this.label2.ForeColor = System.Drawing.Color.LightPink;
             this.label2.Location = new System.Drawing.Point(551, 234);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(118, 46);
+            this.label2.Size = new System.Drawing.Size(98, 36);
             this.label2.TabIndex = 7;
             this.label2.Text = "GRAMATURA\r\nPRODUKTU";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,7 +135,7 @@
             0,
             0});
             this.numericUpDown_gramatura.Name = "numericUpDown_gramatura";
-            this.numericUpDown_gramatura.Size = new System.Drawing.Size(114, 27);
+            this.numericUpDown_gramatura.Size = new System.Drawing.Size(114, 23);
             this.numericUpDown_gramatura.TabIndex = 8;
             this.numericUpDown_gramatura.ThousandsSeparator = true;
             this.numericUpDown_gramatura.Value = new decimal(new int[] {
@@ -139,7 +151,7 @@
             this.label3.ForeColor = System.Drawing.Color.LightPink;
             this.label3.Location = new System.Drawing.Point(521, 345);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(214, 23);
+            this.label3.Size = new System.Drawing.Size(178, 18);
             this.label3.TabIndex = 9;
             this.label3.Text = "OBLICZONE KALORIE";
             // 
@@ -162,7 +174,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(666, 285);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(19, 20);
+            this.label5.Size = new System.Drawing.Size(16, 16);
             this.label5.TabIndex = 11;
             this.label5.Text = "g";
             // 
@@ -173,7 +185,7 @@
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label6.Location = new System.Drawing.Point(721, 391);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 20);
+            this.label6.Size = new System.Drawing.Size(40, 16);
             this.label6.TabIndex = 12;
             this.label6.Text = "kcal";
             // 
@@ -189,22 +201,13 @@
             this.button_back.TabIndex = 40;
             this.button_back.Text = "WRÓĆ";
             this.button_back.UseVisualStyleBackColor = false;
-            // 
-            // columnHeader_nazwa
-            // 
-            this.columnHeader_nazwa.Text = "Nazwa";
-            this.columnHeader_nazwa.Width = 296;
-            // 
-            // columnHeader_kalorycznosc
-            // 
-            this.columnHeader_kalorycznosc.Text = "kcal/100g";
-            this.columnHeader_kalorycznosc.Width = 125;
+            this.button_back.Click += new System.EventHandler(this.button_back_Click);
             // 
             // KalkulatorKalorii
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.button_back);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -222,6 +225,7 @@
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "KalkulatorKalorii";
             this.Text = "KalkulatorKalorii";
+            this.Load += new System.EventHandler(this.KalkulatorKalorii_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_gramatura)).EndInit();
             this.ResumeLayout(false);

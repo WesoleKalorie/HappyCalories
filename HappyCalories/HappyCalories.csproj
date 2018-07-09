@@ -59,6 +59,7 @@
       <DependentUpon>Edycja.cs</DependentUpon>
     </Compile>
     <Compile Include="IEdycja.cs" />
+    <Compile Include="IKalkulatorKalorii.cs" />
     <Compile Include="IKonto.cs" />
     <Compile Include="ILogowanie.cs" />
     <Compile Include="IRejestracja.cs" />

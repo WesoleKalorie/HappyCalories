@@ -145,8 +145,51 @@ namespace HappyCalories
             return data;
         }
 
+        public string[] GetNames()
+        {
+            string[] names = new string[791];
+            int i = 0;
 
-     }
+            MySqlCommand comm = connect.CreateCommand();
+
+            comm.CommandText = "SELECT nazwa FROM produkty;";
+
+            MySqlDataReader reader = comm.ExecuteReader();
+
+            while(reader.Read())
+            {
+                names[i] = reader["nazwa"].ToString();
+                i++;
+            }
+
+            reader.Close();
+
+            return names;
+        }
+
+        public string[] GetCalories()
+        {
+            string[] calories = new string[791];
+            int i = 0;
+
+            MySqlCommand comm = connect.CreateCommand();
+
+            comm.CommandText = "SELECT kalorycznosc FROM produkty;";
+
+            MySqlDataReader reader = comm.ExecuteReader();
+
+            while (reader.Read())
+            {
+                calories[i] = reader["kalorycznosc"].ToString();
+                i++;
+            }
+
+            reader.Close();
+
+            return calories;
+        }
+
+    }
 
     
         

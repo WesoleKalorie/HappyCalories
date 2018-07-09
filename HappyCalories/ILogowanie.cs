@@ -20,6 +20,9 @@ namespace HappyCalories
 
         // eventy Konto.cs
         event Func<string, string, string[]> LoadUserData;
-       
+
+        // events KalkulatorKalorii.cs
+        event Func<string[]> GetAllNameOfProduct;
+        event Func<string[]> GetAllCaloriesOfProduct;
     }
 }

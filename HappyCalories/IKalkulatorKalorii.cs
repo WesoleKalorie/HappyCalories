@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace HappyCalories
 {
-    interface IKonto
+    interface IKalkulatorKalorii
     {
-        // events Konto.cs
-        event Func<string, string, string[]> LoadUserData;
-
-        // events KalkulatorKalorii.cs
         event Func<string[]> GetAllNameOfProduct;
         event Func<string[]> GetAllCaloriesOfProduct;
-
+        event Action Cancel;
     }
 }

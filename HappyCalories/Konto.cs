@@ -12,11 +12,17 @@ namespace HappyCalories
 {
     public partial class Konto : Form, IKonto
     {
+        KalkulatorKalorii calc = new KalkulatorKalorii();
+
         private string login;
         private string password;
 
         public event Func<string, string, string[]> LoadUserData;
-       
+
+        // events KalkulatorKalorii.cs
+        public event Func<string[]> GetAllNameOfProduct;
+        public event Func<string[]> GetAllCaloriesOfProduct;
+
         public string Login
         {
             get { return this.login; }
@@ -32,6 +38,26 @@ namespace HappyCalories
          public Konto()
         {
             InitializeComponent();
+
+            calc.GetAllNameOfProduct += Calc_GetAllNameOfProduct;
+            calc.GetAllCaloriesOfProduct += Calc_GetAllCaloriesOfProduct;
+            calc.Cancel += Calc_Cancel;
+        }
+
+        private void Calc_Cancel()
+        {
+            this.Show();
+            calc.Hide();
+        }
+
+        private string[] Calc_GetAllCaloriesOfProduct()
+        {
+            return GetAllCaloriesOfProduct();
+        }
+
+        private string[] Calc_GetAllNameOfProduct()
+        {
+            return GetAllNameOfProduct();
         }
 
         private void Konto_Load(object sender, EventArgs e)
@@ -91,6 +117,12 @@ namespace HappyCalories
         {
             
 
+        }
+
+        private void button_kalkulator_Click(object sender, EventArgs e)
+        {
+            calc.Show();
+            this.Hide();
         }
     }
 }

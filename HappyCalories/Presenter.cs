@@ -21,7 +21,19 @@ namespace HappyCalories
             view.Register_Rejestracja += View_Register_Rejestracja;
             view.AddUser_Edycja += View_AddUser_Edycja;
             view.LoadUserData += View_LoadUserData;
+            view.GetAllNameOfProduct += View_GetAllNameOfProduct;
+            view.GetAllCaloriesOfProduct += View_GetAllCaloriesOfProduct;
 
+        }
+
+        private string[] View_GetAllCaloriesOfProduct()
+        {
+            return model.GetCalories();
+        }
+
+        private string[] View_GetAllNameOfProduct()
+        {
+            return model.GetNames();
         }
 
         private string[] View_LoadUserData(string login, string password)

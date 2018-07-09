@@ -319,6 +319,7 @@
             this.button_kalkulator.TabIndex = 21;
             this.button_kalkulator.Text = "KALKULATOR\r\nKALORII";
             this.button_kalkulator.UseVisualStyleBackColor = false;
+            this.button_kalkulator.Click += new System.EventHandler(this.button_kalkulator_Click);
             // 
             // button_wyloguj
             // 
