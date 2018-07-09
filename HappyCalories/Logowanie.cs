@@ -22,12 +22,21 @@ namespace HappyCalories
         // eventy Rejestracja
         public event Func<string, bool> Register_Rejestracja;
 
+        // eventy Edycja
+        public event Func<string, string, int, int, int, int, string, bool> AddUser_Edycja;
+
         public Logowanie()
         {
             InitializeComponent();
 
             rejs.ChangeLogin += Rejs_ChangeLogin;
             rejs.Register += Rejs_Register;
+            rejs.AddUser_Edycja += Rejs_AddUser_Edycja;
+        }
+
+        private bool Rejs_AddUser_Edycja(string login, string password, int age, int weight, int height, int lifeStyle, string allergens)
+        {
+            return AddUser_Edycja(login, password, age, weight, height, lifeStyle, allergens);
         }
 
         private bool Rejs_Register(string login)

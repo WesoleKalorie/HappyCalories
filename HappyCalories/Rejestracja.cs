@@ -17,10 +17,18 @@ namespace HappyCalories
         public Rejestracja()
         {
             InitializeComponent();
+
+            edit.AddUser += Edit_AddUser;
+        }
+
+        private bool Edit_AddUser(string login, string password, int age, int weight, int height , int lifeStyle, string allergens)
+        {
+            return AddUser_Edycja(login, password, age, weight, height, lifeStyle, allergens);
         }
 
         public event Action ChangeLogin;
         public event Func<string, bool> Register;
+        public event Func<string, string,int,  int, int, int, string, bool> AddUser_Edycja;
 
         private void label_dologowania_Click(object sender, EventArgs e)
         {

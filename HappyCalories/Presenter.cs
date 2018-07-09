@@ -19,7 +19,14 @@ namespace HappyCalories
             view.SqlConnection += View_SqlConnection;
             view.Login += View_Login;
             view.Register_Rejestracja += View_Register_Rejestracja;
+            view.AddUser_Edycja += View_AddUser_Edycja;
 
+
+        }
+
+        private bool View_AddUser_Edycja(string login, string password, int age, int weight, int height, int lifeStyle, string allergens)
+        {
+            return model.AddUser(login, password, age, weight, height, lifeStyle, allergens);
         }
 
         private bool View_Register_Rejestracja(string login)

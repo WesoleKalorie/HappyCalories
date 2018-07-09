@@ -8,7 +8,11 @@ namespace HappyCalories
 {
     interface IRejestracja
     {
+        // eventy Rejestracja.cs
         event Action ChangeLogin;
         event Func<string, bool> Register;
+
+        //eventy Edycja.cs
+        event Func<string, string, int, int, int, int, string, bool> AddUser_Edycja;
     }
 }

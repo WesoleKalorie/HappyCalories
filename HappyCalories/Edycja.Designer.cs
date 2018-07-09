@@ -203,7 +203,6 @@
             // 
             // numericUpDown_waga
             // 
-            this.numericUpDown_waga.DecimalPlaces = 1;
             this.numericUpDown_waga.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown_waga.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.numericUpDown_waga.Location = new System.Drawing.Point(169, 337);
@@ -215,10 +214,14 @@
             this.numericUpDown_waga.Name = "numericUpDown_waga";
             this.numericUpDown_waga.Size = new System.Drawing.Size(85, 19);
             this.numericUpDown_waga.TabIndex = 32;
+            this.numericUpDown_waga.Value = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
             // 
             // numericUpDown_wzrost
             // 
-            this.numericUpDown_wzrost.DecimalPlaces = 1;
             this.numericUpDown_wzrost.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.numericUpDown_wzrost.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.numericUpDown_wzrost.Location = new System.Drawing.Point(169, 364);
@@ -230,6 +233,11 @@
             this.numericUpDown_wzrost.Name = "numericUpDown_wzrost";
             this.numericUpDown_wzrost.Size = new System.Drawing.Size(85, 19);
             this.numericUpDown_wzrost.TabIndex = 33;
+            this.numericUpDown_wzrost.Value = new decimal(new int[] {
+            175,
+            0,
+            0,
+            0});
             // 
             // comboBox_tryb
             // 
@@ -462,6 +470,7 @@
             this.button_zapisz.TabIndex = 39;
             this.button_zapisz.Text = "ZAPISZ";
             this.button_zapisz.UseVisualStyleBackColor = false;
+            this.button_zapisz.Click += new System.EventHandler(this.button_zapisz_Click);
             // 
             // Edycja
             // 

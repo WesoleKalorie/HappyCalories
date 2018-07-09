@@ -8,5 +8,6 @@ namespace HappyCalories
 {
     interface IEdycja
     {
+        event Func<string, string,int, int, int, int, string, bool> AddUser;
     }
 }

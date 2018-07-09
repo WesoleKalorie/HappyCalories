@@ -8,12 +8,14 @@ namespace HappyCalories
 {
     interface ILogowanie
     {
-        // eventy logowania
+        // eventy Logowanie.cs
         event Func<bool> SqlConnection;
         event Func<string, string, bool> Login;
 
-        // eventy 
-
+        // eventy Rejestracja.cs
         event Func<string, bool> Register_Rejestracja;
+
+        // eventy Edycja.cs
+        event Func<string, string, int, int, int, int, string, bool> AddUser_Edycja;
     }
 }

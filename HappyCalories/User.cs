@@ -11,6 +11,7 @@ namespace HappyCalories
         private string login;
         private string password;
         private int age;
+        private int weight;
         private int height;
         private int lifeStyle;
         private string allergens;
@@ -33,6 +34,12 @@ namespace HappyCalories
             set { this.age = value; }
         }
 
+        public int Weight
+        {
+            get { return this.weight; }
+            set { this.weight = value; }
+        }
+
         public int Height
         {
             get { return this.height; }
@@ -51,11 +58,12 @@ namespace HappyCalories
             set { this.allergens = value; }
         }
 
-        public User(string login, string passwd, int age, int height, int lifeStyle, string allergens )
+        public User(string login, string passwd, int age, int weight, int height, int lifeStyle, string allergens )
         {
             this.Login = login;
             this.Password = passwd;
             this.Age = age;
+            this.Weight = weight;
             this.Height = height;
             this.LifeStyle = lifeStyle;
             this.Allergens = allergens;
