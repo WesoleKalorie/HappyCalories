@@ -6,17 +6,30 @@ using System.Threading.Tasks;
 
 namespace HappyCalories
 {
-    class LogowaniePresenter
+    class Presenter
     {
         ILogowanie view;
         Model model;
 
-        public LogowaniePresenter(Model model, ILogowanie view)
+        public Presenter(Model model, ILogowanie view)
         {
             this.model = model;
             this.view = view;
 
             view.SqlConnection += View_SqlConnection;
+            view.Login += View_Login;
+            view.Register_Rejestracja += View_Register_Rejestracja;
+
+        }
+
+        private bool View_Register_Rejestracja(string login)
+        {
+            return model.Registr(login);
+        }
+
+        private bool View_Login(string login, string password)
+        {
+            return model.Login(login, password);
         }
 
         private bool View_SqlConnection()

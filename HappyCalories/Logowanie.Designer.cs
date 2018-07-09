@@ -96,7 +96,7 @@
             this.textBox_Login.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Login.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox_Login.Location = new System.Drawing.Point(194, 193);
-            this.textBox_Login.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Login.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Login.Name = "textBox_Login";
             this.textBox_Login.Size = new System.Drawing.Size(148, 19);
             this.textBox_Login.TabIndex = 4;
@@ -106,7 +106,7 @@
             this.textBox_Haslo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBox_Haslo.Font = new System.Drawing.Font("Courier New", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox_Haslo.Location = new System.Drawing.Point(194, 262);
-            this.textBox_Haslo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox_Haslo.Margin = new System.Windows.Forms.Padding(2);
             this.textBox_Haslo.Name = "textBox_Haslo";
             this.textBox_Haslo.Size = new System.Drawing.Size(148, 19);
             this.textBox_Haslo.TabIndex = 5;
@@ -118,12 +118,13 @@
             this.button_zaloguj.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button_zaloguj.ForeColor = System.Drawing.Color.LightPink;
             this.button_zaloguj.Location = new System.Drawing.Point(194, 312);
-            this.button_zaloguj.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_zaloguj.Margin = new System.Windows.Forms.Padding(2);
             this.button_zaloguj.Name = "button_zaloguj";
             this.button_zaloguj.Size = new System.Drawing.Size(147, 62);
             this.button_zaloguj.TabIndex = 6;
             this.button_zaloguj.Text = "ZALOGUJ";
             this.button_zaloguj.UseVisualStyleBackColor = false;
+            this.button_zaloguj.Click += new System.EventHandler(this.button_zaloguj_Click);
             // 
             // label_zlehaslo
             // 
@@ -131,12 +132,12 @@
             this.label_zlehaslo.AutoSize = true;
             this.label_zlehaslo.Font = new System.Drawing.Font("Courier New", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label_zlehaslo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label_zlehaslo.Location = new System.Drawing.Point(221, 282);
+            this.label_zlehaslo.Location = new System.Drawing.Point(151, 283);
             this.label_zlehaslo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label_zlehaslo.Name = "label_zlehaslo";
-            this.label_zlehaslo.Size = new System.Drawing.Size(84, 15);
+            this.label_zlehaslo.Size = new System.Drawing.Size(245, 15);
             this.label_zlehaslo.TabIndex = 7;
-            this.label_zlehaslo.Text = "!Złe hasło!";
+            this.label_zlehaslo.Text = "!Złe hasło lub konto nie istnieje!";
             this.label_zlehaslo.Visible = false;
             // 
             // label_dorejestracji
@@ -151,6 +152,7 @@
             this.label_dorejestracji.Size = new System.Drawing.Size(280, 14);
             this.label_dorejestracji.TabIndex = 8;
             this.label_dorejestracji.Text = "↓Pierwszy raz z nami? Zarejestruj się ↓";
+            this.label_dorejestracji.Click += new System.EventHandler(this.label_dorejestracji_Click);
             // 
             // Logowanie
             // 
@@ -167,9 +169,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(604, 495);
             this.Name = "Logowanie";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Logowanie";
             this.Load += new System.EventHandler(this.Logowanie_Load);
             this.ResumeLayout(false);

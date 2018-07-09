@@ -58,7 +58,9 @@
     <Compile Include="Edycja.Designer.cs">
       <DependentUpon>Edycja.cs</DependentUpon>
     </Compile>
+    <Compile Include="IEdycja.cs" />
     <Compile Include="ILogowanie.cs" />
+    <Compile Include="IRejestracja.cs" />
     <Compile Include="KalkulatorKalorii.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,13 +73,7 @@
     <Compile Include="Konto.Designer.cs">
       <DependentUpon>Konto.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginView.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginView.Designer.cs">
-      <DependentUpon>LoginView.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LogowaniePresenter.cs" />
+    <Compile Include="Presenter.cs" />
     <Compile Include="Logowanie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +89,7 @@
     <Compile Include="Rejestracja.Designer.cs">
       <DependentUpon>Rejestracja.cs</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="Dieta.resx">
       <DependentUpon>Dieta.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,9 +101,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Konto.resx">
       <DependentUpon>Konto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginView.resx">
-      <DependentUpon>LoginView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Logowanie.resx">
       <DependentUpon>Logowanie.cs</DependentUpon>

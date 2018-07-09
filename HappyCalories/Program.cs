@@ -18,7 +18,7 @@ namespace HappyCalories
             Application.SetCompatibleTextRenderingDefault(false);
             Logowanie view = new Logowanie();
             Model model = new Model();
-            LogowaniePresenter presenter = new LogowaniePresenter(model, view);
+            Presenter presenter = new Presenter(model, view);
             Application.Run(view);           
         }
     }
