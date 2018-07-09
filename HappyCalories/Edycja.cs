@@ -88,8 +88,13 @@ namespace HappyCalories
             else if (checkBox_A14.Checked == true && allergens != "") allergens += "," + "A14";
 
 
-            if (comboBox_tryb.SelectedText != "")
+            if (comboBox_tryb.SelectedText != null)
+            {
                 goodAdd = AddUser(login, passwd, age, weight, height, lifeStyle, allergens);
+
+                Application.Restart();
+                Environment.Exit(0);
+            }
             else
                 MessageBox.Show("Nalezy wybrac poziom trybu zycia!");
 

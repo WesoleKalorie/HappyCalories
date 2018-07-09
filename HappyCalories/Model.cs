@@ -119,6 +119,32 @@ namespace HappyCalories
             return true;
         }
 
+        public string[] LoadData(string login, string password)
+        {
+            string log = login.Insert(0, '"'.ToString()).Insert(login.Count() + 1, '"'.ToString());
+            string passwd = password.Insert(0, '"'.ToString()).Insert(password.Count() + 1, '"'.ToString());
+            string[] data = new string[6];
+
+            MySqlCommand comm = connect.CreateCommand();
+
+            comm.CommandText = "SELECT login,wiek,wzrost,waga,tryb_zycia,alergeny FROM uzytkownicy WHERE login LIKE "+log+" AND haslo LIKE "+passwd+";";
+            MySqlDataReader reader = comm.ExecuteReader();
+
+            while(reader.Read())
+            {
+                data[0] = reader["login"].ToString();
+                data[1] = reader["wiek"].ToString();
+                data[2] = reader["wzrost"].ToString();
+                data[3] = reader["waga"].ToString();
+                data[4] = reader["tryb_zycia"].ToString();
+                data[5] = reader["alergeny"].ToString();
+            }
+
+            reader.Close();
+
+            return data;
+        }
+
 
      }
 

@@ -95,7 +95,7 @@
             this.label_nick.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_nick.Location = new System.Drawing.Point(28, 202);
             this.label_nick.Name = "label_nick";
-            this.label_nick.Size = new System.Drawing.Size(69, 20);
+            this.label_nick.Size = new System.Drawing.Size(56, 17);
             this.label_nick.TabIndex = 3;
             this.label_nick.Text = "label1";
             // 
@@ -108,7 +108,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(28, 249);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.Size = new System.Drawing.Size(43, 16);
             this.label1.TabIndex = 4;
             this.label1.Text = "wiek:";
             // 
@@ -121,7 +121,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label2.Location = new System.Drawing.Point(28, 276);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 17);
+            this.label2.Size = new System.Drawing.Size(43, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "waga:";
             // 
@@ -134,7 +134,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label3.Location = new System.Drawing.Point(28, 303);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 17);
+            this.label3.Size = new System.Drawing.Size(57, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "wzrost:";
             // 
@@ -147,7 +147,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(28, 330);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 17);
+            this.label4.Size = new System.Drawing.Size(85, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "tryb życia:";
             // 
@@ -160,7 +160,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(28, 357);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(89, 17);
+            this.label5.Size = new System.Drawing.Size(71, 16);
             this.label5.TabIndex = 8;
             this.label5.Text = "alergeny:";
             // 
@@ -173,7 +173,7 @@
             this.label_wiek.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_wiek.Location = new System.Drawing.Point(141, 246);
             this.label_wiek.Name = "label_wiek";
-            this.label_wiek.Size = new System.Drawing.Size(69, 20);
+            this.label_wiek.Size = new System.Drawing.Size(56, 17);
             this.label_wiek.TabIndex = 10;
             this.label_wiek.Text = "label7";
             // 
@@ -186,7 +186,7 @@
             this.label_waga.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_waga.Location = new System.Drawing.Point(141, 273);
             this.label_waga.Name = "label_waga";
-            this.label_waga.Size = new System.Drawing.Size(69, 20);
+            this.label_waga.Size = new System.Drawing.Size(56, 17);
             this.label_waga.TabIndex = 11;
             this.label_waga.Text = "label8";
             // 
@@ -199,7 +199,7 @@
             this.label_wzrost.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_wzrost.Location = new System.Drawing.Point(141, 300);
             this.label_wzrost.Name = "label_wzrost";
-            this.label_wzrost.Size = new System.Drawing.Size(69, 20);
+            this.label_wzrost.Size = new System.Drawing.Size(56, 17);
             this.label_wzrost.TabIndex = 12;
             this.label_wzrost.Text = "label9";
             // 
@@ -212,7 +212,7 @@
             this.label_tryb.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_tryb.Location = new System.Drawing.Point(141, 327);
             this.label_tryb.Name = "label_tryb";
-            this.label_tryb.Size = new System.Drawing.Size(79, 20);
+            this.label_tryb.Size = new System.Drawing.Size(64, 17);
             this.label_tryb.TabIndex = 13;
             this.label_tryb.Text = "label10";
             // 
@@ -225,7 +225,7 @@
             this.label_alergeny.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_alergeny.Location = new System.Drawing.Point(141, 354);
             this.label_alergeny.Name = "label_alergeny";
-            this.label_alergeny.Size = new System.Drawing.Size(69, 20);
+            this.label_alergeny.Size = new System.Drawing.Size(56, 17);
             this.label_alergeny.TabIndex = 14;
             this.label_alergeny.Text = "label6";
             // 
@@ -238,7 +238,7 @@
             this.label11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label11.Location = new System.Drawing.Point(216, 276);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(26, 17);
+            this.label11.Size = new System.Drawing.Size(22, 16);
             this.label11.TabIndex = 15;
             this.label11.Text = "kg";
             // 
@@ -251,7 +251,7 @@
             this.label12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label12.Location = new System.Drawing.Point(216, 249);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(62, 17);
+            this.label12.Size = new System.Drawing.Size(50, 16);
             this.label12.TabIndex = 16;
             this.label12.Text = "lat(a)";
             // 
@@ -264,7 +264,7 @@
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label13.Location = new System.Drawing.Point(216, 303);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(26, 17);
+            this.label13.Size = new System.Drawing.Size(22, 16);
             this.label13.TabIndex = 17;
             this.label13.Text = "cm";
             // 
@@ -276,7 +276,7 @@
             this.label6.ForeColor = System.Drawing.Color.LightPink;
             this.label6.Location = new System.Drawing.Point(259, 130);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(488, 27);
+            this.label6.Size = new System.Drawing.Size(384, 22);
             this.label6.TabIndex = 18;
             this.label6.Text = "DZIENNE ZAPOTRZEBOWANIE KALORYCZNE";
             // 
@@ -292,6 +292,7 @@
             this.button_edytuj.TabIndex = 19;
             this.button_edytuj.Text = "EDYTUJ";
             this.button_edytuj.UseVisualStyleBackColor = false;
+            this.button_edytuj.Click += new System.EventHandler(this.button_edytuj_Click);
             // 
             // button_dieta
             // 
@@ -331,6 +332,7 @@
             this.button_wyloguj.TabIndex = 22;
             this.button_wyloguj.Text = "WYLOGUJ";
             this.button_wyloguj.UseVisualStyleBackColor = false;
+            this.button_wyloguj.Click += new System.EventHandler(this.button_wyloguj_Click);
             // 
             // label_DZK
             // 
@@ -340,7 +342,7 @@
             this.label_DZK.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label_DZK.Location = new System.Drawing.Point(358, 191);
             this.label_DZK.Name = "label_DZK";
-            this.label_DZK.Size = new System.Drawing.Size(150, 31);
+            this.label_DZK.Size = new System.Drawing.Size(114, 24);
             this.label_DZK.TabIndex = 23;
             this.label_DZK.Text = "100000,0\r\n";
             // 
@@ -352,7 +354,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label7.Location = new System.Drawing.Point(568, 194);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 31);
+            this.label7.Size = new System.Drawing.Size(62, 24);
             this.label7.TabIndex = 24;
             this.label7.Text = "KCAL";
             // 
@@ -361,7 +363,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(782, 553);
+            this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label_DZK);
             this.Controls.Add(this.button_wyloguj);
@@ -389,6 +391,7 @@
             this.MinimumSize = new System.Drawing.Size(800, 600);
             this.Name = "Konto";
             this.Text = "Konto";
+            this.Load += new System.EventHandler(this.Konto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_ona)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_on)).EndInit();

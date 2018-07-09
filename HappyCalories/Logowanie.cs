@@ -15,15 +15,18 @@ namespace HappyCalories
         Rejestracja rejs = new Rejestracja();
         Konto konto = new Konto();
        
-        // eventy logowanie
+        // eventy Logowanie.cs
         public event Func<bool> SqlConnection;
         public event Func<string, string, bool> Login;
 
-        // eventy Rejestracja
+        // eventy Rejestracja.cs
         public event Func<string, bool> Register_Rejestracja;
 
-        // eventy Edycja
+        // eventy Edycja.cs
         public event Func<string, string, int, int, int, int, string, bool> AddUser_Edycja;
+
+        // eventy Konto.cs
+        public event Func<string, string, string[]> LoadUserData;
 
         public Logowanie()
         {
@@ -32,6 +35,15 @@ namespace HappyCalories
             rejs.ChangeLogin += Rejs_ChangeLogin;
             rejs.Register += Rejs_Register;
             rejs.AddUser_Edycja += Rejs_AddUser_Edycja;
+            konto.LoadUserData += Konto_LoadUserData;
+          
+        }
+
+       
+
+        private string[] Konto_LoadUserData(string login, string password)
+        {
+            return LoadUserData(login, password);
         }
 
         private bool Rejs_AddUser_Edycja(string login, string password, int age, int weight, int height, int lifeStyle, string allergens)
@@ -67,7 +79,12 @@ namespace HappyCalories
 
                 if (goodPass == true)
                 {
-                    MessageBox.Show("Przeszło");
+                    konto.Login = login;
+                    konto.Password = password;
+
+                    konto.Show();
+                    this.Hide();
+
                     label_zlehaslo.Visible = false;
                 }
                 else
