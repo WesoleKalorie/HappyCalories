@@ -145,6 +145,9 @@ namespace HappyCalories
 
                 string name = listView_dania.SelectedItems[0].Text;
 
+                label_nazwadania.Text = name;
+                label_nazwadania.Visible = true;
+
                 for(int i = 0; i < dishes[0].Count(); i++ )
                 {
                     if (name == dishes[0][i]) index = i;
