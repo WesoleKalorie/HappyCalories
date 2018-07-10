@@ -15,5 +15,10 @@ namespace HappyCalories
         event Func<string[]> GetAllNameOfProduct;
         event Func<string[]> GetAllCaloriesOfProduct;
 
+        //eventy GeneratorDiety.cs
+        event Func<string, string[]> GetProducts;
+        event Func<List<string[]>> GetDishes;
+
+
     }
 }

@@ -138,6 +138,7 @@
             this.listView_dania.TabIndex = 6;
             this.listView_dania.UseCompatibleStateImageBehavior = false;
             this.listView_dania.View = System.Windows.Forms.View.Details;
+            this.listView_dania.SelectedIndexChanged += new System.EventHandler(this.listView_dania_SelectedIndexChanged);
             // 
             // columnHeader_nazwadania
             // 
@@ -183,6 +184,7 @@
             this.label_nazwadania.Size = new System.Drawing.Size(184, 17);
             this.label_nazwadania.TabIndex = 9;
             this.label_nazwadania.Text = "TU MA BYĆ NAZWA DANIA:";
+            this.label_nazwadania.Visible = false;
             // 
             // listView_produkty
             // 
@@ -207,13 +209,13 @@
             // columnHeader_produkt
             // 
             this.columnHeader_produkt.Text = "Produkt";
-            this.columnHeader_produkt.Width = 282;
+            this.columnHeader_produkt.Width = 256;
             // 
             // columnHeader_gramy
             // 
-            this.columnHeader_gramy.Text = "Gramatura";
+            this.columnHeader_gramy.Text = "Procentowa zawartość";
             this.columnHeader_gramy.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader_gramy.Width = 148;
+            this.columnHeader_gramy.Width = 175;
             // 
             // label4
             // 
@@ -238,6 +240,7 @@
             this.button_reload.TabIndex = 41;
             this.button_reload.Text = "NOWY\r\nZESTAW";
             this.button_reload.UseVisualStyleBackColor = false;
+            this.button_reload.Click += new System.EventHandler(this.button_reload_Click);
             // 
             // button_back
             // 

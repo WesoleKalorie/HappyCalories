@@ -32,6 +32,10 @@ namespace HappyCalories
         public event Func<string[]> GetAllNameOfProduct;
         public event Func<string[]> GetAllCaloriesOfProduct;
 
+        //eventy GeneratorDiety.cs
+        public event Func<string, string[]> GetProducts;
+        public event Func<List<string[]>> GetDishes;
+
         public Logowanie()
         {
             InitializeComponent();
@@ -42,7 +46,19 @@ namespace HappyCalories
             konto.LoadUserData += Konto_LoadUserData;
             konto.GetAllCaloriesOfProduct += Konto_GetAllCaloriesOfProduct;
             konto.GetAllNameOfProduct += Konto_GetAllNameOfProduct;
+            konto.GetProducts += Konto_GetProducts;
+            konto.GetDishes += Konto_GetDishes;
           
+        }
+
+        private List<string[]> Konto_GetDishes()
+        {
+            return GetDishes();
+        }
+
+        private string[] Konto_GetProducts(string login)
+        {
+            return GetProducts(login);
         }
 
         private string[] Konto_GetAllNameOfProduct()

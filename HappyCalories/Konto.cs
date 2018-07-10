@@ -17,12 +17,17 @@ namespace HappyCalories
 
         private string login;
         private string password;
+        private double dzk;
 
         public event Func<string, string, string[]> LoadUserData;
 
         // events KalkulatorKalorii.cs
         public event Func<string[]> GetAllNameOfProduct;
         public event Func<string[]> GetAllCaloriesOfProduct;
+
+        //eventy GeneratorDiety.cs
+        public event Func<string, string[]> GetProducts;
+        public event Func<List<string[]>> GetDishes;
 
         public string Login
         {
@@ -36,6 +41,13 @@ namespace HappyCalories
             set { this.password = value; }
         }
 
+        public double Dzk
+        {
+            get { return this.dzk; }
+            set { this.dzk = value; }
+        }
+
+
          public Konto()
         {
             InitializeComponent();
@@ -44,6 +56,18 @@ namespace HappyCalories
             calc.GetAllCaloriesOfProduct += Calc_GetAllCaloriesOfProduct;
             calc.Cancel += Calc_Cancel;
             dieta.Cancel += Dieta_Cancel;
+            dieta.GetProducts += Dieta_GetProducts;
+            dieta.GetDishes += Dieta_GetDishes;
+        }
+
+        private List<string[]> Dieta_GetDishes()
+        {
+            return GetDishes();
+        }
+
+        private string[] Dieta_GetProducts(string login)
+        {
+            return GetProducts(login);
         }
 
         private void Dieta_Cancel()
@@ -112,6 +136,8 @@ namespace HappyCalories
             double calories = 66.5 + (13.7 * Convert.ToInt16(date[3])) + (5 * Convert.ToInt16(date[2])) - (6.8 * Convert.ToInt16(date[1]));
             calories *= lifeStyle;
 
+            this.dzk = calories;
+
             label_DZK.Text = calories.ToString();
         }
 
@@ -135,6 +161,8 @@ namespace HappyCalories
 
         private void button_dieta_Click(object sender, EventArgs e)
         {
+            dieta.Login = this.login;
+            dieta.Dzk = this.dzk;
             dieta.Show();
             this.Hide();
         }

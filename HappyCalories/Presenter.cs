@@ -23,7 +23,19 @@ namespace HappyCalories
             view.LoadUserData += View_LoadUserData;
             view.GetAllNameOfProduct += View_GetAllNameOfProduct;
             view.GetAllCaloriesOfProduct += View_GetAllCaloriesOfProduct;
+            view.GetProducts += View_GetProducts;
+            view.GetDishes += View_GetDishes;
 
+        }
+
+        private List<string[]> View_GetDishes()
+        {
+            return model.GetDishes();
+        }
+
+        private string[] View_GetProducts(string login)
+        {
+            return model.GetProducts(login);
         }
 
         private string[] View_GetAllCaloriesOfProduct()

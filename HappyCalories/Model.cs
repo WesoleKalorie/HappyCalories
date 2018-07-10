@@ -189,6 +189,79 @@ namespace HappyCalories
             return calories;
         }
 
+        public string[] GetProducts(string login)
+        {
+            string[] names;
+            string log = login.Insert(0, '"'.ToString()).Insert(login.Count() + 1, '"'.ToString());
+            int counter = 0;
+            int i = 0;
+
+            MySqlCommand comm = connect.CreateCommand();
+            comm.CommandText = "SELECT p.nazwa, p.alergeny FROM produkty p, uzytkownicy u WHERE u.login LIKE " +log+ " AND p.alergeny NOT LIKE u.alergeny; ";
+
+            MySqlDataReader reader = comm.ExecuteReader();
+
+            while(reader.Read())
+            {
+                counter++;
+            }
+
+            reader.Close();
+
+            MySqlCommand comm2 = connect.CreateCommand();
+            comm2.CommandText = "SELECT p.nazwa, p.alergeny FROM produkty p, uzytkownicy u WHERE u.login LIKE " + log + " AND p.alergeny NOT LIKE u.alergeny; ";
+
+            MySqlDataReader reader2 = comm.ExecuteReader();
+
+            names = new string[counter];
+
+            while(reader2.Read())
+            {
+                names[i] = reader2["nazwa"].ToString();
+                i++;
+            }
+
+            reader2.Close();
+
+            return names;
+        }
+
+        public List<string[]> GetDishes()
+        {
+            List<string[]> dishes = new List<string[]>();
+
+            string[] names = new string[35];
+            string[] products = new string[35];
+            string[] content = new string[35];
+            string[] type = new string[35];
+
+            int i = 0;
+
+            MySqlCommand comm = connect.CreateCommand();
+            comm.CommandText = "SELECT nazwa, produkty, zawartosc, typ FROM dania";
+
+            MySqlDataReader reader = comm.ExecuteReader();
+
+            while(reader.Read())
+            {
+                names[i] = reader["nazwa"].ToString();
+                products[i] = reader["produkty"].ToString();
+                content[i] = reader["zawartosc"].ToString();
+                type[i] = reader["typ"].ToString();
+
+                i++;
+            }
+
+            reader.Close();
+
+            dishes.Add(names);
+            dishes.Add(products);
+            dishes.Add(content);
+            dishes.Add(type);
+
+            return dishes;
+        }
+
     }
 
     

@@ -9,5 +9,7 @@ namespace HappyCalories
     interface IDieta
     {
         event Action Cancel;
+        event Func<string, string[]> GetProducts;
+        event Func<List<string[]>> GetDishes;
     }
 }
