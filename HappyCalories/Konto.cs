@@ -14,6 +14,7 @@ namespace HappyCalories
     {
         KalkulatorKalorii calc = new KalkulatorKalorii();
         Dieta dieta = new Dieta();
+        Edycja edit = new Edycja();
 
         private string login;
         private string password;
@@ -149,7 +150,10 @@ namespace HappyCalories
 
         private void button_edytuj_Click(object sender, EventArgs e)
         {
-            
+            edit.Login = Login;
+            edit.Password = Password;
+            edit.Show();
+            this.Hide();
 
         }
 

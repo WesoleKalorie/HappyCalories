@@ -100,23 +100,40 @@ namespace HappyCalories
 
         public bool AddUser(string login, string password, int age, int weight, int height, int lifeStyle, string allergens)
         {
-            MySqlCommand comm = connect.CreateCommand();
+            try
+            {
+                MySqlCommand comm = connect.CreateCommand();
 
-            User user = new User(login, password, age, weight, height, lifeStyle, allergens);
+                User user = new User(login, password, age, weight, height, lifeStyle, allergens);
 
-            comm.CommandText = "INSERT INTO uzytkownicy(login,haslo,wiek,waga,wzrost,tryb_zycia,alergeny)" +
-                                " VALUES(@login, @haslo, @wiek, @waga, @wzrost, @tryb_zycia, @alergeny)";
-            comm.Parameters.AddWithValue("@login",user.Login);
-            comm.Parameters.AddWithValue("@haslo", user.Password);
-            comm.Parameters.AddWithValue("@wiek", user.Age);
-            comm.Parameters.AddWithValue("@waga", user.Weight);
-            comm.Parameters.AddWithValue("@wzrost", user.Height);
-            comm.Parameters.AddWithValue("@tryb_zycia", user.LifeStyle);
-            comm.Parameters.AddWithValue("@alergeny", user.Allergens);
-            comm.ExecuteNonQuery();
-            comm.Parameters.Clear();
+                comm.CommandText = "INSERT INTO uzytkownicy(login,haslo,wiek,waga,wzrost,tryb_zycia,alergeny)" +
+                                    " VALUES(@login, @haslo, @wiek, @waga, @wzrost, @tryb_zycia, @alergeny)";
+                comm.Parameters.AddWithValue("@login", user.Login);
+                comm.Parameters.AddWithValue("@haslo", user.Password);
+                comm.Parameters.AddWithValue("@wiek", user.Age);
+                comm.Parameters.AddWithValue("@waga", user.Weight);
+                comm.Parameters.AddWithValue("@wzrost", user.Height);
+                comm.Parameters.AddWithValue("@tryb_zycia", user.LifeStyle);
+                comm.Parameters.AddWithValue("@alergeny", user.Allergens);
+                comm.ExecuteNonQuery();
+                comm.Parameters.Clear();
 
-            return true;
+                return true;
+            }
+            catch
+            {
+                MySqlCommand comm = connect.CreateCommand();
+
+                User user = new User(login, password, age, weight, height, lifeStyle, allergens);
+
+                comm.CommandText = "UPDATE uzytkownik SET wiek = "+user.Age+ ",wzrost = "+user.Height+", waga = "+user.Weight+", tryb_zycia = "+user.LifeStyle+", alergeny = "+user.Allergens +
+                    " WHERE login LIKE "+user.Login+" AND haslo LIKE "+user.Password+";";
+                comm.ExecuteNonQuery();
+                comm.Parameters.Clear();
+
+                return true;
+            }
+            
         }
 
         public string[] LoadData(string login, string password)

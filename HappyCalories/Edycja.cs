@@ -88,7 +88,7 @@ namespace HappyCalories
             else if (checkBox_A14.Checked == true && allergens != "") allergens += "," + "A14";
 
 
-            if (comboBox_tryb.SelectedText != null)
+            if (comboBox_tryb.SelectedItem != null)
             {
                 goodAdd = AddUser(login, passwd, age, weight, height, lifeStyle, allergens);
 
